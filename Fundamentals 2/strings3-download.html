@@ -29,6 +29,14 @@
     let quote = 'I dO nOT lIke gREen eGgS anD HAM';
 
     // Add your code here
+    let fixedQuote = quote.toLowerCase();
+    let firstLetter = fixedQuote.slice(0,1);
+    fixedQuote = fixedQuote.replace(firstLetter, firstLetter.toUpperCase());
+
+    fixedQuote = fixedQuote.replace('green eggs and ham', 'pickled onions');
+
+    let fullStop = '.';
+    let finalQuote = fixedQuote + fullStop;
 
     // Don't edit the code below here!
 
