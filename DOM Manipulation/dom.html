@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id=myp> Hey I'm red</p>
+
+    <h3 id=h3> 
+        I’m a blue h3!
+    </h3>
+
+    <h1 style="display: none;">
+        I’m in a div
+    </h1>
+
+    <p style="display: none;">ME TOO!</p>
+    
+    <div id="wrapper" ></div>
+
+    <script>
+        document.getElementById("myp").style.color = "#ff0000";
+        document.getElementById("h3").style.color = "#0000ff";
+
+        document.getElementById("wrapper");
+        let para = document.createElement("P");
+        let t = document.createTextNode("ME TOO!");
+        para.appendChild(t);
+        wrapper.style.background = 'pink'
+        wrapper.style.border = '1px solid black'
+        let head1 = document.createElement("H1");
+        let he = document.createTextNode("I'm in a div")
+        head1.appendChild(he);
+        document.getElementById("wrapper").appendChild(head1);
+        document.getElementById("wrapper").appendChild(para);
+        
+    </script>
+</body>
+</html>
