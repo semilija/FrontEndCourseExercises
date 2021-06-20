@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <h1>JavaScript Data Types</h1>
+    <h2>There are 8 basic data types in JavaScript</h2>
+    </main>
+
+    <table id="t01">
+        <tr>
+            <th>Data Types</th>
+            <th>Description</th>
+            <th>Examples</th>
+        </tr>
+        <tr>
+            <td>number</td>
+            <td>for numbers of any kind: 
+                <br>
+                integer of floating-point</td>
+            <td>let n = 123;
+                <br>
+                n = 12.345;</td>
+        </tr>
+        <tr>
+            <td>bigint</td>
+            <td>for integer numbers of arbitrary length</td>
+            <td>// the "n" at the end means it's a BigInt
+                <br>
+                const bigInt = 12345678...67890n;</td>
+        </tr>
+        <tr>
+            <td>string</td>
+            <td>a string in JavaScript must be surrounded by quotes</td>
+            <td>let str = "Hello";
+                <br>
+                let str2 = 'Single quotes are ok too';
+                <br>
+                let phrase = `can embed another ${str}`;</td>
+        </tr>
+        <tr>
+            <td>boolean</td>
+            <td>the boolean type has only two values:true(correct) and false(incorrect)</td>
+            <td>let nameFieldChecked = true; // yes, name field is checked
+                <br>
+                let ageFieldChecked = false; // no, age field is not checked</td>
+        </tr>
+        <tr>
+            <td>null</td>
+            <td>for unknown values - a standalone type that has a single value null</td>
+            <td>let age = null;</td>
+        </tr>
+        <tr>
+            <td>undefined</td>
+            <td>for unassigned values</td>
+            <td>let age;
+                <br>
+                alert(age); // shows "undefined"
+            </td>
+        </tr>
+        <tr>
+            <td>objects and symbols</td>
+            <td>object is for more complex data structures and symbol for unique identifiers</td>
+        </tr>
+    </table>
+<section>
+<a href="https://javascript.info/types">Reference to the source</a>    
+</section>
+</body>
+</html>
