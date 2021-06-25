@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //1) Type of function? function declaration
+
+function add9(a, b) {
+  return a + b;
+}
+let result = add9(1, 9);
+console.log( result )
+
+// 2) Type of function? Function expression
+const multiplyNum = function(x, y) {
+    return x * y;
+};
+
+console.log(multiplyNum(3, 4));
+
+// 3) Type of function?  Arrow Function
+let capitalizeStr = (str)=>{
+    if(typeof str == 'string') {
+        return str.replace(/^\w/, c => c.toUpperCase());
+    } else {
+        return '';
+    }
+};
+console.log(capitalizeStr("hello"));
+
+// 4) Type of function? Function expression
+
+const str = "hello";
+function lastLetter(){
+    return str.slice(-1);
+}
+console.log(str.charAt(str.length-1));
+
+// 5) Type of function? Array Function
+
+function average(array){
+    return array.reduce((a,b) => a+b ) / array.length;
+}
+console.log(average([5,19,10]));
+
+// 6) Type of function? function declaration
+function greaterNum(math){
+    return math.max(x, y);
+}
+console.log(Math.max(5, 15));
+    </script>
+</body>
+</html>
