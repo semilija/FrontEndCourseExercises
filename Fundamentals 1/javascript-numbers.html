@@ -45,7 +45,7 @@
                 font-size: 35px;
             }
             
-            .header h1 span {
+            .header h1 {
                 font: 700 60px/1 "Dancing Script", cursive;
                 display: block;
             }
@@ -183,42 +183,77 @@
     </head>
     <body>
 
-        <div class="header">
-            <h1><span>Social Hackers</span>Company</h1>
-            <h2>We are a competitive firm with over 15 years of experience in the field of computer generated probabilistic maintenance hybrid datasets.</h2>
-        </div>
+        <main class="header">
+            <h1> Social Hackers Company</h1>
+            <h2>We are a competitive firm with over <script>document.write (new Date().getFullYear() - 2005);</script> years in the field of computer generated probabilistic maintenance hybrid datasets.</h2>
+        </main>
 
         <section class="section">
-            <div class="wrapper">
+            <main class="wrapper">
                 <h2 class="section__title">Software is our Passion</h2>
                 <p class="section__intro">
                     Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor.
 
 
                 </p>
-                <div class="box__grid">
+                <main class="box__grid">
                     <article class="box"><a class="box__content" href="#"><i class="fa fa-lightbulb-o fa-3x"></i>
             <h3 class="box__title">Website Design</h3>
-            <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p><span class="box__more">Special offer 25% off: &euro; 500</span></a></article>
+            <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p><span class="box__more">Special offer <script>document.write("25%");</script> off: &euro; 
+                <script>let discount1  = 500 * 0.25;
+                let priceafterdiscount1 = 500 - discount1; 
+                document.write (priceafterdiscount1);</script></a></article>
                     <article class="box"><a class="box__content" href="#"><i class="fa fa-code fa-3x"></i>
+
             <h3 class="box__title">Software Applications</h3>
-            <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p><span class="box__more">Special offer 25% off: &euro; 400</span></a></article>
+            <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p><span class="box__more">Special offer <script>document.write("25%");</script> off: &euro; 
+                <script>let discount2  = 400 * 0.25;
+                let priceafterdiscount2 = 400 - discount1; 
+                document.write (priceafterdiscount2);</script></a></article>
                     <article class="box"><a class="box__content" href="#"><i class="fa fa-mobile fa-3x"></i>
             <h3 class="box__title">Mobile Applications</h3>
-            <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p><span class="box__more">Special offer 25% off: &euro; 350</span></a></article>
-                </div>
-            </div>
+            <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p><span class="box__more">Special offer <script>document.write("25%");</script> off: &euro; <script>let discount3  = 350 * 0.25;
+                let priceafterdiscount3 = 350 - discount3; 
+                document.write (priceafterdiscount3);</script></a></article>
+                    </main>
+            </main>
         </section>
 
-        <div class="section section--cta">
+        <main class="section section--cta">
             <div class="wrapper">
                 <h2 class="section__title">Full package</h2>
-                <p class="section__intro">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor.</p><a class="btn" href="#">Special offer 25% off: &euro;1250</a>
+                <p class="section__intro">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor.</p><a class="btn" href="#">Special offer <script>document.write("25%");</script>off: &euro;
+                    <script>disc=1250 * 0.25;
+                    let priceafterdiscount4 = 1250 - discount3;
+                    document.write (priceafterdiscount4);</script></a>
             </div>
-        </div>
-        <div class="footer">
-            <p>&copy; 2005 ~ 2020 Landing Page</p>
-        </div>
+        </main>
+        <main class="footer">
+            <p>&copy; 2005 ~ <script>const currentYear = new Date().getFullYear();
+                document.write( currentYear );</script> Landing Page</p>
+        </main>
+        <script>
+            const companyCreated = 2005;
+            const yearsOfExperience = ( new Date().getFullYear() - 2005 );
+            console.log (yearsOfExperience);
+            
+            let mobileAppPrice1 = 500 ;
+            let discount1  = 500 * 0.25;
+            let priceafterdiscount1 = 500 - discount1;
+            console.log (priceafterdiscount1);
 
+            let mobileAppPrice2 = 400 ;
+            let discount2  = 400 * 0.25;
+            let priceafterdiscount2 = 400 - discount2;
+            console.log (priceafterdiscount2);
+
+            let mobileAppPrice3 = 350 ;
+            let discount3  = 350 * 0.25;
+            let priceafterdiscount3 = 350 - discount3;
+            console.log (priceafterdiscount3);
+
+            const currentYear = new Date().getFullYear();
+            document.write( currentYear );
+        </script>
     </body>
 </html>

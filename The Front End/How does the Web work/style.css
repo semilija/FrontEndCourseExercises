@@ -1,0 +1,50 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: Arial;
+    font-weight: 500;
+    font-size: 14px;
+    color: #1e1e1e;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #004060
+}
+
+ul.nobullet {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+h1, h2 {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #004060;
+}
+ h1 {
+     background-color: #004060;
+     color: #ffffff;
+     padding: 4px 8px;
+     opacity: 0.5;
+
+ }
+
+ a, a:visited {
+     color: #006699;
+     text-decoration: none;
+     font-size: 15px;
+ }
+
+ a:hover {
+     text-decoration: underline;
+ }
+
+ p {
+     font-size: 17px;
+     font-style:oblique;
+     color:#082330;
+ }
